@@ -30,8 +30,8 @@ describe('AppComponent', () => {
 
   it('should retrieve weather forecasts from the server', () => {
     const mockSymbiotes = [
-      { id: "qwerty",  name: "Something", iscomplete: "Dontknow" },
-      { id: "ytrewq",  name: "Nothing", iscomplete: "Dontknow" }
+      { id: "qwerty",  name: "Something", isComplete: "Dontknow" },
+      { id: "ytrewq",  name: "Nothing", isComplete: "Dontknow" }
     ];
 
     component.ngOnInit();

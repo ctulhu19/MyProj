@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 interface Symbiote {
   id: string;
   name: string;
-  iscomplete: string;
+  isComplete: string;
 }
 
 @Component({
