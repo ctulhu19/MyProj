@@ -1,0 +1,23 @@
+<h1 id="tableLabel">Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!symbiotes"><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>
+
+<table *ngIf="symbiotes">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Progress</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let symbiote of symbiotes">
+            <td>{{ symbiote.id }}</td>
+            <td>{{ symbiote.name }}</td>
+            <td>{{ symbiote.iscomplete }}</td>
+        </tr>
+    </tbody>
+</table>
